@@ -1,0 +1,7 @@
+REGEDIT4
+
+; TD asks for "Lucida Console" as its monospace UI font. It is not part of
+; corefonts and is not installed, so map it to an available mono face. This is
+; the same replacement mechanism that was breaking Verdana -- used correctly here.
+[HKEY_CURRENT_USER\Software\Wine\Fonts\Replacements]
+"Lucida Console"="Liberation Mono"

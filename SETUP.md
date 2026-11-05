@@ -20,8 +20,13 @@ can run, create the bottle, then apply the three fixes.
 With Nix, the tools come from this repo:
 
 ```sh
-nix develop github:Kiki-Gen/touchdesigner-linux-broadwell   # or: git clone && nix develop
+git clone https://github.com/Kiki-Gen/touchdesigner-linux-broadwell
+cd touchdesigner-linux-broadwell
+nix develop
 ```
+
+(`nix develop github:Kiki-Gen/touchdesigner-linux-broadwell` gets you the tools
+without cloning, but the scripts below live in the repo, so clone it.)
 
 That gives you `bottles-cli`, `vulkaninfo`, `fc-match`, `cabextract`, the core
 fonts as `$CORE_FONTS_DIR`, and Liberation Mono. Without Nix, install those from
